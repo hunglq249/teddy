@@ -108,10 +108,16 @@ if (!function_exists('handle_common_author_data')) {
     function build_language($controller, $detail, $select = array(), $page_languages){
         foreach ($select as $key => $value) {
             $result = explode('|||', $detail[$controller .'_'. $value]);
-            foreach (array_reverse($page_languages) as $k => $val) {
-                // echo $val;die;
-                $detail[$value. '_'. $val] = $result[$k];
+            if (count($result) == 2) {
+                foreach (array_reverse($page_languages) as $k => $val) {
+                    // echo $val;die;
+                    if ( $value != '' ) {
+                        $detail[$value. '_'. $val] = $result[$k];
+                    }
+                    
+                }
             }
+            
         }
         return $detail;
     }
