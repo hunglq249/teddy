@@ -48,7 +48,7 @@
 				<div class="col-xs-12 col-sm-6 col-xl-3 item">
 					<p class="paragraph"><?php echo $this->lang->line('location')?></p>
 					<p class="paragraph">
-						917 Rosenbaum Lodge Apt. 831
+                        <?php echo $this->lang->line('address')?>
 					</p>
 				</div>
 
@@ -57,11 +57,11 @@
 					<table class="table">
 						<tr>
 							<td>Phone</td>
-							<td><a href="tel:(84)12345678">(84) 1234 5678</a></td>
+							<td><a href="tel:(84) 90 464 11 51">(84) 90 464 11 51</a></td>
 						</tr>
 						<tr>
 							<td>Email</td>
-							<td><a href="mailto:info@teddygrillhouse.vn">info@teddygrillhouse.vn</a></td>
+							<td><a href="mailto:info@teddys.vn">info@teddys.vn</a></td>
 						</tr>
 					</table>
 				</div>
@@ -75,7 +75,7 @@
 
 			<div class="row foot">
 				<div class="col">
-					<p class="paragraph">2018 Teddy’s Grill House</p>
+					<p class="paragraph">2019 Teddy’s Grill House</p>
 				</div>
 				<div class="col">
 					<ul>

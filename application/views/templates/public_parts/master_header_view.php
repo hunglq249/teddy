@@ -150,11 +150,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<table class="table">
 						<tr>
 							<td>Phone</td>
-							<td><a href="tel:(84)12345678">(84) 1234 5678</a></td>
+							<td><a href="tel:(84) 90 464 11 51">(84) 90 464 11 51</a></td>
 						</tr>
 						<tr>
 							<td>Email</td>
-							<td><a href="mailto:info@teddygrillhouse.vn">info@teddygrillhouse.vn</a></td>
+							<td><a href="mailto:info@teddys.vn">info@teddys.vn</a></td>
 						</tr>
 					</table>
 				</div>
