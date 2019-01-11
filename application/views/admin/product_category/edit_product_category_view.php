@@ -84,11 +84,11 @@
                                                     }elseif($k == 'description' && in_array($k, $request_language_template)){
                                                         echo form_label($val, $k .'_'. $key);
                                                         echo form_error($k .'_'. $key);
-                                                        echo form_textarea($k .'_'. $key,  trim($detail['description_'. $key]), 'class="form-control" rows="5"');
+                                                        echo form_textarea($k .'_'. $key, isset($detail['description_'. $key]) ? trim($detail['description_'. $key]) : '', 'class="form-control" rows="5"');
                                                     }elseif($k == 'content' && in_array($k, $request_language_template)){
                                                         echo form_label($val, $k .'_'. $key);
                                                         echo form_error($k .'_'. $key);
-                                                        echo form_textarea($k .'_'. $key,  trim($detail['content_'. $key]), 'class="tinymce-area form-control" rows="5"');
+                                                        echo form_textarea($k .'_'. $key,  isset($detail['content_'. $key]) ? trim($detail['content_'. $key]) : '', 'class="tinymce-area form-control" rows="5"');
                                                     }
                                                 ?>
                                             </div>
