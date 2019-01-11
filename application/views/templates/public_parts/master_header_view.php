@@ -170,11 +170,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="left col-sm-9 item">
 					<ul>
 						<li>
-							<a class="active change-language" data-language="en" href="javascript:void(0)">En</a>
+							<a class="<?php echo ($this->session->userdata('langAbbreviation') == 'en') ? 'active' : '' ?> change-language" data-language="en" href="javascript:void(0)">En</a>
 						</li>
 						<li> / </li>
 						<li>
-							<a class="change-language" data-language="vi" href="javascript:void(0)">Vi</a>
+							<a class="<?php echo ($this->session->userdata('langAbbreviation') == 'vi') ? 'active' : '' ?> change-language" data-language="vi" href="javascript:void(0)">Vi</a>
 						</li>
 					</ul>
 				</div>
