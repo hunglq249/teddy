@@ -5,7 +5,7 @@
 */
 class Product_category extends Admin_Controller{
     private $request_language_template = array(
-        'title'
+        'title', 'description'
     );
     private $author_data = array();
 
@@ -124,9 +124,9 @@ class Product_category extends Admin_Controller{
                 $this->session->set_flashdata('message_error',MESSAGE_ISSET_ERROR);
                 redirect('admin/'. $this->data['controller'] .'', 'refresh');
             }
-            $detail = $this->product_category_model->get_by_id($id, array('title'));
+            $detail = $this->product_category_model->get_by_id($id, array('title', 'description'));
             $this->build_new_category($product_category,0,$this->data['product_category'],$detail['parent_id'],$id);
-            $this->data['detail'] = build_language($this->data['controller'], $detail, array('title'), $this->page_languages);
+            $this->data['detail'] = build_language($this->data['controller'], $detail, array('title', 'description'), $this->page_languages);
             if($this->input->post()){
                 $this->load->library('form_validation');
                 $this->form_validation->set_rules('title_vi', 'Tiêu đề', 'required');
