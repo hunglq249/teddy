@@ -173,6 +173,7 @@ class Public_Controller extends MY_Controller {
         $this->load->model('about_model');
         $this->load->model('product_category_model');
         $this->load->model('post_category_model');
+        $this->load->model('contact_model');
         date_default_timezone_set('Asia/Ho_Chi_Minh');
 
         $this->langAbbreviation = $this->session->userdata('langAbbreviation') ? $this->session->userdata('langAbbreviation') : 'vi';
@@ -196,6 +197,7 @@ class Public_Controller extends MY_Controller {
         $this->data['about_menu'] = $this->fetch_about();
         $this->data['category_menu'] = $this->fetch_menu();
         $this->data['blog_menu'] = $this->fetch_blog();
+        $this->data['contact'] = $this->fetch_contact();
     }
 
     protected function render($the_view = NULL, $template = 'master') {
@@ -211,5 +213,9 @@ class Public_Controller extends MY_Controller {
     }
     private function fetch_blog(){
         return $this->post_category_model->get_all_with_pagination_search('desc', $this->session->userdata('langAbbreviation'), 5);
+    }
+
+    private function fetch_contact(){
+        return $this->contact_model->find(1);
     }
 }

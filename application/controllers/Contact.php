@@ -7,11 +7,13 @@ class Contact extends Public_Controller {
 
     public function __construct() {
         parent::__construct();
+        $this->load->model('contact_model');
     }
 
     public function index(){
     	$this->load->helper('form');
         $this->load->library('form_validation');
+
 
         $this->form_validation->set_rules('contact_name', 'Họ và tên', 'required');
         $this->form_validation->set_rules('contact_mail', 'Email', 'required');

@@ -109,6 +109,11 @@ if($this->ion_auth->logged_in()) {
                         <i class="fa fa-inbox"></i> <span>Mail đăng kí nhận thông tin</span>
                     </a>
                 </li>
+                <li>
+                    <a href="<?php echo base_url('admin/contact/detail') ?>">
+                        <i class="fa fa-inbox"></i> <span>Form liên hệ</span>
+                    </a>
+                </li>
                 <li class="header">DOCUMENTATION</li>
                 <li>
                     <a href="<?php echo base_url('admin/user/change_password') ?>">

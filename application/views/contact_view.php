@@ -63,7 +63,7 @@
 
     <div class="cover d-none d-sm-block">
         <div class="mask">
-            <img src="https://images.unsplash.com/photo-1520218576172-c1a2df3fa5fc?ixlib=rb-0.3.5&s=0a0cd3b2d02209eb9efb15325386d4c8&auto=format&fit=crop&w=675&q=80" alt="contact cover image">
+            <?php echo html_entity_decode($contact->map,ENT_NOQUOTES); ?>
         </div>
     </div>
 
