@@ -141,7 +141,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col item">
 					<p class="paragraph"><?php echo $this->lang->line('location')?></p>
 					<p class="paragraph">
-						<?php echo $this->lang->line('address') ?>
+						<?php echo $contact->address ?>
 					</p>
 				</div>
 
@@ -150,11 +150,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<table class="table">
 						<tr>
 							<td>Phone</td>
-							<td><a href="tel:(84) 90 464 11 51">(84) 90 464 11 51</a></td>
+							<td><a href="tel: <?php echo $contact->numberphone ?>"><?php echo $contact->numberphone ?></a></td>
 						</tr>
 						<tr>
 							<td>Email</td>
-							<td><a href="mailto:info@teddys.vn">info@teddys.vn</a></td>
+							<td><a href="mailto:<?php echo $contact->email ?>"><?php echo $contact->email ?></a></td>
 						</tr>
 					</table>
 				</div>

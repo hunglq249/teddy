@@ -20,16 +20,9 @@
 
                 <div class="row">
                     <div class="item col-xs-12 col-sm-6">
-                        <p class="paragraph">Location</p>
+                        <p class="paragraph"><?php echo $this->lang->line('location')?></p>
                         <p class="paragraph">
-                            917 Rosenbaum Lodge Apt. 831
-                        </p>
-                    </div>
-
-                    <div class="item col-xs-12 col-sm-6">
-                        <p class="paragraph">Location</p>
-                        <p class="paragraph">
-                            917 Rosenbaum Lodge Apt. 831
+                            <?php echo $contact->address ?>
                         </p>
                     </div>
                 </div>
