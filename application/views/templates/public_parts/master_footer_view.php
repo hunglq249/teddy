@@ -124,7 +124,6 @@
     $(".change-language").click(function(){
         $.ajax({
             method: "GET",
-			//Test github
             url: "http://localhost/teddy/homepage/change_language",
             data: {
                 lang: $(this).data('language')
