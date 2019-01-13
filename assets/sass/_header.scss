@@ -369,6 +369,14 @@ MOBILE DEVICES (Under 768px)
                             margin-bottom: 30px;
                         }
                     }
+
+                    &.body{
+                        .item{
+                            &:last-of-type{
+                                display: none;
+                            }
+                        }
+                    }
                 }
             }
         }
