@@ -15,7 +15,7 @@
 
 		<div class="container">
 			<div class="row head">
-				<div class="col-xs-12 col-sm-6 col-xl-3 item">
+				<div class="col-xs-12 col-sm-6 col-lg-2 item">
 					<ul>
 						<li>
 							<a href="<?php echo base_url('gioi-thieu') ?>">
@@ -45,14 +45,14 @@
 					</ul>
 				</div>
 
-				<div class="col-xs-12 col-sm-6 col-xl-3 item">
+				<div class="col-xs-12 col-sm-6 col-lg-4 item">
 					<p class="paragraph"><?php echo $this->lang->line('location')?></p>
 					<p class="paragraph">
                         <?php echo $contact->address ?>
 					</p>
 				</div>
 
-				<div class="col-xs-12 col-sm-6 col-xl-3 item">
+				<div class="col-xs-12 col-sm-6 col-lg-4 item">
 					<p class="paragraph"><?php echo $this->lang->line('reservations')?></p>
 					<table class="table">
 						<tr>
@@ -66,7 +66,7 @@
 					</table>
 				</div>
 
-				<div class="col-xs-12 col-sm-6 col-xl-3 item">
+				<div class="col-xs-12 col-sm-6 col-lg-2 item">
 					<p class="paragraph"><?php echo $this->lang->line('subscribe-us')?></p>
 					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="<?php echo $this->lang->line('form-email')?>">
 					<button type="button" class="btn btn-link"><?php echo $this->lang->line('subscribe')?></button>
@@ -124,7 +124,7 @@
     $(".change-language").click(function(){
         $.ajax({
             method: "GET",
-            url: "http://localhost/teddy/homepage/change_language",
+            url: "http://teddys.vn/homepage/change_language",
             data: {
                 lang: $(this).data('language')
             },

@@ -62,7 +62,7 @@
     </div>
 
     <div class="cover d-none d-sm-block">
-        <div class="mask">
+        <div id="map">
             <?php echo html_entity_decode($contact->map,ENT_NOQUOTES); ?>
         </div>
     </div>
